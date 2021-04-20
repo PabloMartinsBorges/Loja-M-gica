@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    class ListaClasses
+    {
+        String NomeClasse;
+        String DescricaoClasse;
+        Dictionary<String,String> Classes;
+
+        public ListaClasses(String nome, String descricao)
+        {
+            this.NomeClasse = nome;
+            this.DescricaoClasse = descricao;
+        }
+
+        public void AdicionarClasses(String nome, String descricao)
+        {
+            Classes.Add(nome, descricao);
+        }
+
+        public String MostrarClasses()
+        {
+            String c = String.Format("Classe:\t\t{0}\n", this.NomeClasse);
+            c += String.Format("Descrição:\t{0}\n", this.DescricaoClasse);
+
+            return c;
+        }
+
+    }
+}
