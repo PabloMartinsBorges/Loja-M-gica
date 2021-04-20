@@ -11,7 +11,7 @@ namespace ConsoleApp8
         String Nome;
         Int32 Moedas;
         
-
+        //Método Construtor de Pessoa
         public Pessoa(String nome, Int32 moedas)
         {
             this.Nome = nome;

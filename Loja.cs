@@ -11,6 +11,8 @@ namespace ConsoleApp8
         public List<Item> Itens;
         public Dictionary<String, string> Catalogo;
 
+
+        //Método Construtor de Loja
         public Loja()
         {
             //Lista de Itens vai ser instânciada junto com o Objeto

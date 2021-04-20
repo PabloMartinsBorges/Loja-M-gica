@@ -13,6 +13,8 @@ namespace ConsoleApp8
         public String Categoria;
         public Int32 Valor;
 
+
+        //Método Construtor de Item
         public Item(string nome, String descricao, String categoria, Int32 valor)
         {
             this.Nome = nome;
