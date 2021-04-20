@@ -12,6 +12,8 @@ namespace ConsoleApp8
         public String Descricao;
         public List<Item> Inventario;
 
+
+        //Método Construtor de Player
         public Player(String nome, Int32 moedas, String classe, String descricao)
             :base(nome, moedas)
         {

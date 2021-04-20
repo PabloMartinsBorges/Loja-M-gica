@@ -13,9 +13,13 @@ namespace ConsoleApp8
 
         public Loja()
         {
+            //Lista de Itens vai ser instânciada junto com o Objeto
             this.Itens = new List<Item>();
+            //Dictionary de Itens vai ser instânciado junto com o Objeto
+            this.Catalogo = new Dictionary<string, string>();
         }
-
+        
+        //Mostra os nomes do itens e ao lado suas descrições
         public void MostrarCatalogo()
         {
            
@@ -27,14 +31,15 @@ namespace ConsoleApp8
             }
         }
 
+
+        //Método para adiconar alguns Objetos de Item à Loja
         public void EstocarLoja()
-        {
-           
-            Item potion = new Item("Poção de Cura", "Um frasco com uma infusão de ervas capaz de curar","Armas", 15);
+        {          
+            Item potion = new Item("Poção de Cura", "Um frasco com uma infusão de ervas capaz de curar","Poções", 15);
             this.Itens.Add(potion);
             this.Catalogo.Add("Poção de Cura", "Um frasco com uma infusão de ervas capaz de curar");
 
-            Item sword = new Item("Espada de Ferro", "Uma espada simples feita de ferro","Poções", 50);
+            Item sword = new Item("Espada de Ferro", "Uma espada simples feita de ferro","Armas", 50);
             this.Itens.Add(sword);
             this.Catalogo.Add("Espada de Ferro", "Uma espada simples feita de ferro");
 
