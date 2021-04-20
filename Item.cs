@@ -8,15 +8,16 @@ namespace ConsoleApp8
 {
     class Item
     {
-        String Nome;
-        String Descricao;
-        String Categoria;
-        Int32 Valor;
+        public String Nome;
+        public String Descricao;
+        public String Categoria;
+        public Int32 Valor;
 
-        public Item(string nome, String descricao, String Categoria, Int32 valor)
+        public Item(string nome, String descricao, String categoria, Int32 valor)
         {
             this.Nome = nome;
             this.Descricao = descricao;
+            this.Categoria = categoria;
             this.Valor = valor;
         }
 
