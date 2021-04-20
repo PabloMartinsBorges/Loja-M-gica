@@ -8,16 +8,17 @@ namespace ConsoleApp8
 {
     class Player : Pessoa
     {
-        String Classe;
-        String Descricao;
-        List<Item> Inventario;
+        public String Classe;
+        public String Descricao;
+        public List<Item> Inventario;
 
-        public Player(String nome, Int32 moedas, String classe, String descricao, List<Item> inventario)
+        public Player(String nome, Int32 moedas, String classe, String descricao)
             :base(nome, moedas)
         {
             this.Classe = classe;
             this.Descricao = descricao;
-            this.Inventario = inventario;
+            this.Inventario = new List<Item>();
+
         }
 
       /*  public static void Mostrar_Classes()
@@ -25,12 +26,14 @@ namespace ConsoleApp8
 
         }*/
 
-        public void Abririnventario()
-        {          
-            foreach(var item in this.Inventario)
+        public void AbrirInventario()
+        {            
+            foreach (Item item in this.Inventario)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item.Nome);
             }
+
+
         }
 
     }
