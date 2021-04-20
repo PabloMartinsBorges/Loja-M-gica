@@ -12,22 +12,23 @@ namespace ConsoleApp8
         {
             Loja lojinha = new Loja();
             lojinha.Catalogo = new Dictionary<string, string>();
-            Item potion = new Item("Poção de Cura", "Um frasco com uma infusão de ervas capaz de curar", "Armas", 15);
+            lojinha.EstocarLoja();
+
+            Item potion = new Item("Poção de Cura", "Um frasco com uma infusão de ervas capaz de curar", "Poções", 15);
 
             String nome = "Pablo";
             Int32 moedas = 100;
             String classe = "Guerreiro";
             String descricao = "Adepto ao combate armado";
             
-           
+
 
             Player jogador = new Player(nome, moedas, classe, descricao);
             jogador.Inventario.Add(potion);
 
+            jogador.AbrirInventario();
 
             lojinha.MostrarCatalogo();
-
-            jogador.Abririnventario();
 
             Console.ReadLine();
         }
