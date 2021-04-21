@@ -39,6 +39,7 @@ namespace ConsoleApp8
             }
 
             Console.WriteLine("Moedas: " + Moedas);
+            Console.WriteLine("");
         }
 
 
