@@ -37,6 +37,12 @@ namespace ConsoleApp8
             lojinha.MostrarCatalogo();
 
 
+            //testando o método Compra
+            jogador.Comprar("Pergaminho do Fogo", lojinha.Itens);
+            jogador.Comprar("Poção de Cura", lojinha.Itens);
+            jogador.Comprar("Poção", lojinha.Itens);
+
+            jogador.AbrirInventario();
 
             //Manter o Console aberto (Visual Studio)
             Console.ReadLine();
